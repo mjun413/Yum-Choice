@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  background-color: rgba(15, 1, 1, 0.007);
+}
+.hide {
+  display: none;
+}
+#upper-section-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:url(https://imagizer.imageshack.com/v2/683x606q90/r/921/LMS4zb.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: fixed;
+  margin-bottom: 10px;
+}
+#lower-section-container {
+  font-family: Abhaya Libre;
+}
+#layer {
+  background-color: rgba(15, 1, 1, 0.329);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+}
+#page-title {
+  color: white;
+  margin-top: 180px;
+  text-align: center;
+}
+#title {
+  font-size: 45px;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+#intro {
+  font-family: Georgia, serif;
+}
+#color-change {
+  color: rgba(97, 172, 77, 0.945);
+}
+#choice-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+}
+.choices {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: Lucida Grande;
+  border: 1px solid white;
+  background-color: rgba(15, 1, 1, 0.164);
+  border-radius: 5px;
+  height: 35px;
+  width: 140px;
+}
+.choices:hover {
+  background-color: rgba(15, 1, 1, 0.603);
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.137), 0 0 25px #9cf14d77 , 0 0 5px #f9f50079;
+}
+.switch {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 170px;
+}
+.switch:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.137), 0 0 25px #9cf14d77 , 0 0 5px #f9f50079;
+}
+.switch a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#backtop-button {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  color:rgb(72, 173, 45);
+  background-color: transparent;
+}
+/* #switch-button {
+  color: white;
+  background-color: rgba(15, 1, 1, 0.068);
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 25px;
+  width: 130px;
+  margin-left: 250px;
+  font-size: 10px;
+  font-family: Lucida Grande;
+} */
+#switch-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.137), 0 0 25px #9cf14d77 , 0 0 5px #f9f50079;
+}
+#cook {
+  margin-right: 10px;
+}
+#dine-search-elements {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#cook-search-elements {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.magnifying-glass {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+}
+#submit-button-small {
+  width: 28px;
+  height: 28px;
+  color: transparent;
+  background:url(https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/85-512.png) no-repeat scroll 0 0 transparent;
+}
+.search-box {
+  height: 25px;
+  width: 125px;
+  margin-right: 5px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  font-family: Lucida Grande;
+}
+#js-search-cook {
+  width: 160px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.616);
+  font-size: 13px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.712);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255, 0.712);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.712);
+}
+#search-change{
+  text-align: right;
+}
+#search-change-text {
+  margin-bottom: 10px;
+  color: rgb(72, 173, 45);
+}
+#click-here {
+  text-decoration: underline;
+}
+.results-flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#results-list {
+  list-style: none;
+}
+#results {
+  text-align: center;
+}
+#rating {
+  color: rgb(72, 173, 45);
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+.imgs {
+  height: 150px;
+  width: 140px;
+}
+#restaurant-img {
+  width:30%;
+  height: 170px;
+}
+#result-container {
+  width:50%;
+  height: 170px;
+}
+#cook-search-elements {
+  color: white;
+}
+#find-recipe-text {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+#restaurant-name-ratings {
+  margin-top: 10px;
+}
+.informations {
+  width: 55%;
+  text-align: left;
+  margin-left: 10px;
+}
+.image-container {
+  width: 45%;
+}
+.image-dine {
+  width: 170px;
+  height: 170px;
+}
+.image-cook {
+  width: 150px;
+  height: 150px;
+}
+.info-item {
+  margin-bottom: 8px;
+}
+#menu-link {
+  margin-bottom: 8px;
+}
+.links a {
+  color: rgb(72, 173, 45);
+}
+.links a:hover {
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+.recipe-infos {
+  margin-bottom: 10px;
+}
+.js-form {
+  margin-top: 60px;
+}
+#back-top {
+  text-align: center;
+}
+#bottom-text {
+  color: rgb(72, 173, 45);
+  text-decoration: underline;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+#bottom-text:hover {
+  cursor: pointer;
+}
+.names {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom:8px;
+}
+.search-sections label {
+  font-family: Lucida Grande;
+}
+.spinner {
+  border: 3px solid #f3f3f3; 
+  border-top: 3px solid rgb(72, 173, 45);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (min-width: 768px) and (max-width : 1366px) {
+  #title {
+    font-size: 70px;
+    padding-top: 40px;
+  }
+  #intro {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+  .choices {
+    font-size: 30px;
+    height: 50px;
+    width: 190px;
+    border: 2px solid white;
+    border-radius: 9px;
+  }
+  #cook {
+    margin-right: 20px;
+  }
+  #js-search-cook {
+    width: 435px;
+    height: 40px;
+  }
+  .switch {
+    margin-left: 450px;
+  }
+  .switch a {
+  font-size: 18px;
+}
+  .search-box {
+    border-bottom: 2px solid white;
+    width: 230px;
+    font-size: 23px;
+  }
+  .search-sections label {
+    font-size: 25px;
+  }  
+  ::-webkit-input-placeholder {
+    font-size: 23px;
+  }
+  #backtop-button {
+    height: 40px;
+    width: 40px;
+  }
+  .name {
+    font-size: 35px;
+  }
+  #rating {
+    font-size: 23px;
+  }
+  .informations {
+    font-size: 22px;
+  }
+  #bottom-text {
+    font-size: 22px;
+  }
+  .magnifying-glass {
+    width: 35px;
+    height: 35px;
+  }
+  #results-list {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1367px ) {
+#title {
+    font-size: 70px;
+    padding-top: 75px;
+  }
+  #intro {
+    font-size: 19px;
+    margin-top: 25px;
+  }
+  .choices {
+    font-size: 30px;
+    height: 50px;
+    width: 190px;
+    border: 2px solid white;
+    border-radius: 9px;
+  }
+  #cook {
+    margin-right: 20px;
+  }
+  .switch {
+    margin-left: 450px;
+  }
+  .switch a {
+  font-size: 18px;
+}
+  #js-search-cook {
+    width: 435px;
+    height: 40px;
+  }
+  .search-box {
+    border-bottom: 2px solid white;
+    width: 230px;
+    font-size: 23px;
+  }
+  .search-sections label {
+    font-size: 25px;
+  }  
+  ::-webkit-input-placeholder {
+    font-size: 23px;
+  }
+  #switch-button {
+    margin-top: 300px;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 23px;
+  }
+  #backtop-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 1200px;
+  }
+  .name {
+    font-size: 35px;
+  }
+  #rating {
+    font-size: 23px;
+  }
+  .informations {
+    font-size: 22px;
+  }
+  #bottom-text {
+    font-size: 22px;
+  }
+  .magnifying-glass {
+    width: 35px;
+    height: 35px;
+  }
+  #results-list {
+    font-size: 20px;
+  }
+  /* .image-dine {
+    width: 230px;
+    height: 230px;
+  } */
+  .results-flex-container {
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 15%;
+  }
+  #search-change{
+  text-align: center;
+  }
+}
