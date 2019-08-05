@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Yum!Choice</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
+  </head>
+  <body>
+      <div id="upper-section-container">
+        <div id="layer">
+          <div id="page-title">
+            <h1 id="title">Yum<span id="color-change">!</span>Choice</h1>
+            <p id="intro">Search to view cooking or eating-out choices</p> 
+          </div>  
+          <div id="choice-section">
+             <button id="cook" class="choices">Recipes</button>
+             <button id="dine" class="choices">Resturants</button>
+          </div>
+          <form id="js-form-dine" class="js-form hide">
+            <div id="dine-search-elements">
+              <div class="search-sections" id="search-section1">
+                <label for="search-term">Find</label>
+                <input type="text" style="color: #ffffff;" class="search-box" name="search-term-name" id="js-search-name" placeholder="pizza"required>
+              </div>
+              <div class="search-sections" id="search-section2">
+                <label for="search-term" >Near</label>
+                <input type="text" style="color: #ffffff;" class="search-box" name="search-term-location" id="js-search-location" placeholder="new york, new york"required>
+              </div>
+              <div id="submit-container" class="big-sumbit">
+                <input type="image" class="magnifying-glass" id="magnifying-glass-dine" src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/85-512.png" alt="Search">
+                <div class="spinner hide"></div>
+              </div>
+            </div>
+          </form>
+          <form id="js-form-cook" class="js-form hide">
+            <div id="cook-search-elements">
+              <input type="text" style="color: #ffffff;" class="search-box" name="search-term-name" id="js-search-cook" placeholder="Search Recipes"required>
+              <input type="image" class="magnifying-glass" id="magnifying-glass-cook" src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/85-512.png" alt="Search">
+              <div class="spinner hide"></div>
+            </div>
+          </form>
+          <div id="switch-cook" class="switch hide">
+              <a href="#">search restaurants instead?</a>
+          </div>
+          <div id="switch-dine" class="switch hide">
+              <a href="#">search recipes instead?</a>
+          </div>     
+        </div>
+      </div>        
+      <div id="lower-section-container">
+        <div id="search-change" class="hide" >
+          <input type="image" id="backtop-button" src="https://icon-library.net/images/back-to-top-icon-png/back-to-top-icon-png-28.jpg" alt="Back to top">
+        </div>   
+        <section id="results" class="hidden">
+          <div id="results-list">
+          </div>
+        </section>
+        <div id="back-top" class="hide" >
+          <p id="bottom-text">Back to top<p>
+        </div>   
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>     
+    <script src="index.js"></script>
+  </body>
+</html>
