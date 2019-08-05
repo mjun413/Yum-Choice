@@ -7,6 +7,6 @@ People sometimes would debate over dine-out or cook from home. This app helps us
 ![](images/YumChoice-SearchPage.png)
 ![](images/Yum!Choice-SearchResults.png)
 
-Live: https://mjun413.github.io/API-capstone-app/ 
+Live:  https://mjun413.github.io/Yum-Choice/ 
 
 Technologies used: HTML, CSS, JavaScript, JQuerys
